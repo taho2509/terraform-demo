@@ -62,3 +62,7 @@ output "gcp_cluster_name" {
 output "drone_endpoint" {
   value = "${data.kubernetes_service.drone_ingress.load_balancer_ingress[0].ip}"
 }
+
+output "kong_endpoint" {
+  value = "${data.kubernetes_service.kong_ingress.load_balancer_ingress[0].ip}"
+}
