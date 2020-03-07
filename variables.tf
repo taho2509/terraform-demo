@@ -21,6 +21,11 @@ variable "gcp_cluster_count" {
   description = "Count of cluster instances to start."
 }
 
+variable "gcp_machine_type" {
+  type = string
+  description = "Compute engine instance type."
+}
+
 variable "cluster_name" {
   type = string
   description = "Cluster name for the GCP Cluster."
